@@ -26,10 +26,10 @@ setup(
         "dogpile_appengine"
     ],
 
-    entry_points=[
+    entry_points={
         'dogpile.cache': [
             'appengine_memcache = '
             'dogpile_appengine.backend:AppEngineMemcacheBackend',
         ],
-    ]
+    }
 )
