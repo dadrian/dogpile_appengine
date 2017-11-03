@@ -31,5 +31,7 @@ setup(
             'appengine_memcache = '
             'dogpile_appengine.backend:AppEngineMemcacheBackend',
         ],
-    }
+    },
+    include_package_data=True,
+    zip_safe=False,
 )
